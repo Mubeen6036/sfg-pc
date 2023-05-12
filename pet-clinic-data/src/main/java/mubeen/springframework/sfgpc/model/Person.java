@@ -1,5 +1,4 @@
 package mubeen.springframework.sfgpc.model;
-
 public class Person {
 	
 	private String firstName;
