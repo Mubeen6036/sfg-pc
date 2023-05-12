@@ -11,6 +11,7 @@
 	<groupId>mubeen.springframework</groupId>
 	<artifactId>sfg-pc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>sfg-pc</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -79,4 +80,7 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>pet-clinic-data</module>
+	</modules>
 </project>
