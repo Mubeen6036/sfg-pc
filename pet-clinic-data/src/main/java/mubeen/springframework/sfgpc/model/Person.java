@@ -1,5 +1,10 @@
 package mubeen.springframework.sfgpc.model;
-public class Person {
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Person extends BaseEntity{
 	
 	private String firstName;
 	private String lastName;

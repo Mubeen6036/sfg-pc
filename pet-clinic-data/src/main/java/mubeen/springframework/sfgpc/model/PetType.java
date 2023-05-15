@@ -1,5 +1,5 @@
 package mubeen.springframework.sfgpc.model;
 
-public class PetType {
+public class PetType extends BaseEntity{
 
 }
