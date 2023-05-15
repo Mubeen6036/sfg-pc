@@ -40,7 +40,7 @@
 		</plugins>
 	</build>
 	<scm>
-		<developerConnection>scm:git:https://github.com/Mubeen6036/sfg-pc.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:Mubeen6036/sfg-pc.git</developerConnection>
 	  <tag>sfg-pc-0.0.1</tag>
   </scm>
 
