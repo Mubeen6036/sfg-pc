@@ -4,9 +4,6 @@ import java.util.Set;
 
 import mubeen.springframework.sfgpc.model.Owner;
 
-public interface OwnerService {
-	Owner findById(Long id);
-	Owner save(Owner owner);
-	Set<Owner> findAll();
+public interface OwnerService extends CrudService<Owner, Long> {
 	Owner findByLastName(String lastName);
 }
