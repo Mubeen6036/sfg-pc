@@ -33,6 +33,6 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
     @Override
     public Pet findById(Long id) {
         return super.findById(id);
-    }
+    } 
 
 }
