@@ -7,8 +7,6 @@ import mubeen.springframework.sfgpc.model.Owner;
 import mubeen.springframework.sfgpc.model.Vet;
 import mubeen.springframework.sfgpc.services.OwnerService;
 import mubeen.springframework.sfgpc.services.VetService;
-import mubeen.springframework.sfgpc.services.map.OwnerServiceMap;
-import mubeen.springframework.sfgpc.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -16,11 +14,13 @@ public class DataLoader implements CommandLineRunner{
 	private final OwnerService ownerService;
 	private final VetService vetService;
 
-	public DataLoader() {
+	public DataLoader(OwnerService ownerService, VetService vetService) {
 		super();
-		this.ownerService = new OwnerServiceMap();
-		this.vetService = new VetServiceMap();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
+
+
 
 	@Override
 	public void run(String... args) throws Exception {
