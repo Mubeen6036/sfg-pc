@@ -4,8 +4,9 @@ import java.util.Set;
 
 import mubeen.springframework.sfgpc.model.Pet;
 import mubeen.springframework.sfgpc.services.CrudService;
+import mubeen.springframework.sfgpc.services.PetService;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>{
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override
 	public Pet save(Pet object) {
