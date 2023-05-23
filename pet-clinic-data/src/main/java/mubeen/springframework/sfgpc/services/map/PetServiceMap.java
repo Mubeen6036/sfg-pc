@@ -2,10 +2,11 @@ package mubeen.springframework.sfgpc.services.map;
 
 import java.util.Set;
 
-import mubeen.springframework.sfgpc.model.Pet;
-import mubeen.springframework.sfgpc.services.CrudService;
-import mubeen.springframework.sfgpc.services.PetService;
+import org.springframework.stereotype.Service;
 
+import mubeen.springframework.sfgpc.model.Pet;
+import mubeen.springframework.sfgpc.services.PetService;
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override

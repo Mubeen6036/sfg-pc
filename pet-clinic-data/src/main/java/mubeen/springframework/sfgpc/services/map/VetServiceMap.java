@@ -2,10 +2,11 @@ package mubeen.springframework.sfgpc.services.map;
 
 import java.util.Set;
 
-import mubeen.springframework.sfgpc.model.Vet;
-import mubeen.springframework.sfgpc.services.CrudService;
-import mubeen.springframework.sfgpc.services.VetService;
+import org.springframework.stereotype.Service;
 
+import mubeen.springframework.sfgpc.model.Vet;
+import mubeen.springframework.sfgpc.services.VetService;
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override

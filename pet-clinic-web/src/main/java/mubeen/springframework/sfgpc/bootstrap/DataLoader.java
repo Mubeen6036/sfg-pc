@@ -1,5 +1,6 @@
 package mubeen.springframework.sfgpc.bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ public class DataLoader implements CommandLineRunner{
 	
 	private final OwnerService ownerService;
 	private final VetService vetService;
-
+	@Autowired
 	public DataLoader(OwnerService ownerService, VetService vetService) {
 		super();
 		this.ownerService = ownerService;

@@ -2,9 +2,10 @@ package mubeen.springframework.sfgpc.services.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
 import mubeen.springframework.sfgpc.model.Owner;
 import mubeen.springframework.sfgpc.services.OwnerService;
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
